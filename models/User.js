@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 // define a schema
-const userSchema = mongoose.schema({
+const userSchema = mongoose.Schema({
     name: {
         type: String,
         maxlength: 50
@@ -34,6 +34,6 @@ const userSchema = mongoose.schema({
 })
 
 // wrap the schema up with a model
-const user = mongoose.model('User', userSchema)
+const User = mongoose.model('User', userSchema)
 
 module.exports = { User }
